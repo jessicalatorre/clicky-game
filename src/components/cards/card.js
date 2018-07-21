@@ -32,7 +32,8 @@ class Card extends Component {
             // this. refers to the overll component and onCardClick refers to the helper function above
             <div className="card" onClick={this.onCardClick}>
             {/* below, we pass data attr to compoents. how? Props stores the data from the parent. NOTE that state stores your component specific data */}
-                {this.props.id}
+                {/* {this.props.id} */}
+                <img src={this.props.img}></img>
             </div>
         )
     }
